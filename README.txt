@@ -9,10 +9,10 @@ differently depending on the state of the progress bar. There are three types
 of widgets:
  - a string, which always shows itself
 
- - a ProgressBarWidget, which may return a different value every time its
+ - a progressbar.Widget, which may return a different value every time its
    update method is called
 
- - a ProgressBarWidgetHFill, which is like ProgressBarWidget, except it
+ - a progressbar.WidgetHFill, which is like progressbar.Widget, except it
    expands to fill the remaining width of the line.
 
 The progressbar module is very easy to use, yet very powerful. It will also
