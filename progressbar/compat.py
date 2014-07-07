@@ -24,7 +24,7 @@
 # Python 3.x (and backports) use a modified iterator syntax
 # This will allow 2.x to behave with 3.x iterators
 try:
-  next
+  next = next
 except NameError:
     def next(iter):
         try:
