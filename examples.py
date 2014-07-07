@@ -15,12 +15,9 @@ def example(fn):
     except: name = fn.__name__
 
     def wrapped():
-        try:
-            sys.stdout.write('Running: %s\n' % name)
-            fn()
-            sys.stdout.write('\n')
-        except KeyboardInterrupt:
-            sys.stdout.write('\nSkipping example.\n\n')
+        sys.stdout.write('Running: %s\n' % name)
+        fn()
+        sys.stdout.write('\n')
 
     examples.append(wrapped)
     return wrapped
