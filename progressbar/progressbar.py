@@ -35,7 +35,7 @@ try:
 except ImportError:
     pass
 
-from .compat import *  # for: any, next
+from .compat import next
 from . import widgets
 
 
